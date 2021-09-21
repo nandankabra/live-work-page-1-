@@ -1,311 +1,269 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap" rel="stylesheet">
-        <title>IDSTATS</title>
-        <style>
-            .n_tbdr{
-                border:1px dashed #000;
-            }
-            body{
-                background-color:#F3F3F3;
-                background-image: url('img/Group\ 495.svg'),url("img/Footer.svg"),url("img/Blue.svg"),url("img/Orange.svg");
-                background-repeat: no-repeat,no-repeat,no-repeat,no-repeat;
-                background-size: auto,1600px 800px,1600px 800px;
-                background-position:100px 660px,-40px 660px, -32px -40px,-40px 200px;
-            
-            }
-            header{
-                min-height: 130px;
-            }
-            .fa-bars{
-              color:#fff !important;
-            }
-            header .navbar-toggler{
-              border:1px solid #fff !important;
-            }
-            .navbar-toggler:focus{
-              box-shadow: none !important;
-            }
-            .n_main{
-                min-height: 900px;
-            }
-            footer{
-            }
-            .n_header_nav > li > a{
-                padding: 61px 32px 20px 32px !important;
-                border-bottom-left-radius: 10px;
-                border-bottom-right-radius: 10px;
-            }
-            .active{
-                background: #f3f3f3;
-                color:#3e3d5f !important;
-            }
-            .active:hover{
-                color:#3e3d5f;
-            }
-            .n_circle{
-                width: 37px;
-                height: 37px;
-                border-radius: 37px;
-                background: #ece8ef;
-            }
-        
-            .n_userlink{
-                color:#3f3f3f !important;
-            }
-        
-            .n_header_nav > li:last-child > a{
-                color:#e8c8ed;
-            }
-            .myCollor h4{
-                font-family: 'Nunito', sans-serif;
-            }
-            .myCollor *{ /* Universal Selector */
-                color:#3e3d5f !important;
-            }
-            .n_panel{
-                min-height: 600px;
-                background: #424d83;
-            }
-           /* .n_panel:hover{
-               height: 445px; 
-               background: #798ce7;
-               cursor: pointer;
-            }
-            .n_panel:hover > div{
-                display: block !important;
-            }*/
-            /*.n_panel1_c1{
-                /* transition: property duration timing-function delay|initial|inherit; */
-               /* transition: all .2s linear ;
-                min-height: 252px;
-                background: #5264bb;
-                text-align: center;
-            }*/
-            /*.n-box{
-                width: 341px;
-                height: 220px;
-                box-shadow: 1px solid #7a76a7;
-            }*/
-            .dropdown-toggle::after {
-                display:none;
-            }
-            .n-1{
-                color: #ffb900;
-            }
-            .n-lg-color{
-                color: #e7e9ef;
-            }
-            .n-pay-box{
-                padding: 7px 25px 7px 25px;
-                border: 1px solid #ffb900;
-                border-radius: 2px;
-                
-            }
-            .n-p{
-                padding-left: 10px !important;
-            }
-            @media screen and (max-width: 992px){
-                .n_header_nav{
-                    background: #573a70 !important;
-                }
-                .n_header_nav a{
-                    border-bottom:1px solid #744c97 ;
-                    border-radius: 0px !important;
-                }
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container p-0 n_container">
-            <header class="">
-              <nav class="navbar navbar-expand-lg navbar-light p-0">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#">
-                    <img src="img/Group 496.svg" height="30">
-                  </a>
-                  <div style="top:-13px;">
-                      <h4>Cognition Lab </h4>
-                  </div>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
-                  </button>
-                  <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                    <div class="mx-auto "></div>
-                    <ul class="navbar-nav mb-2 mb-lg-0 n_header_nav">
-                      <li class="nav-item">
-                        <a class="nav-link   text-dark active" aria-current="page" href="#">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link text-dark" href="#">Service</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link text-dark" href="#">Our Plans</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link text-dark" href="#">Tools &amp; Resources</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle n_userlink" href="#" id="navbarDropdown" role="button" aria-expanded="false">
-                          <span class="d-inline-block n_circle "></span>
-                          <span class="position-relative" style="top:-13px;">Nidhi Bokadiya <i class="fas fa-chevron-down"></i></span>
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;900&display=swap" rel="stylesheet">
+    <title>project 3</title>
+    <style>
+        .n-con {
+            min-height: 1100px;
+        }
+        .n-mt {
+            margin-top: 35px;
+        }
+        x .fa-bars {
+            color: #000;
+        }
+        header{
+            background: #FFFFFF;
+        }
+        header .navbar-toggler {
+            border: 1px solid #000 !important;
+            box-shadow: none !important;
+        }
+        .n-circle {
+            width: 25px;
+            height: 25px;
+            border-radius: 25px;
+            background-color: #ECE8EF;
+        }
+        .dropdown-toggle::after {
+            display: none;
+        }
+        .active {
+            background: #FFB900 !important;
+            color: #3E3D5F !important;
+            border-radius: 0px 0px 5px 5px;
+        }
+        .n-tbdr {
+            border: 1px solid black !important;
+            height: auto !important;
+        }
+        .main {
+            min-height: 850px;
+            background-color:  #FBF4FC ;
+        }
+        .n-penal1 {
+            min-height: 500px;
+            background-color: #424D83;
+            cursor: pointer;
+        }
+        .n-heading {
+            display: inline-block;
+        }
+        .n-padding {
+            padding: 5px 35px;
+            border: 1px solid #FFB900;
+            color: #FFB900;
+        }
+        .n-padding:hover {
+            color: #FFB900;
+        }
+        footer{
+            background: #ECE8EF;
+        }
+        .my_color * {
+            color: #3e3d5f;
+        }
+        .my_color>h5 {
+            font-family: 'Nunito', sans-serif;
+        }
+        .n-size>ul>li>a,
+        .n-size>p {
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div >
+        <header class="m-0 ps-5 ">
+            <nav class="navbar navbar-expand-lg navbar-light p-0 ">
+                <div class="container-fluid ">
+                    <a class="navbar-brand pt-4 pb-0" href="#">
+                        <img src="img/Group 496.svg" alt="#">
+                    </a>
+                    <div>
+                        <h5 class="n-mt">Cognition Lab</h5>
+                    </div>
+                    <button class="navbar-toggler mt-4" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="mx-auto"></div>
+                        <ul class="navbar-nav mb-2 mb-lg-0 n-mediapadding">
+                            <li class="nav-item">
+                                <a class="nav-link  pt-5 ps-3 pe-3 fw-bold text-black active " href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pt-5 ps-3 pe-3 fw-normal text-black" href="#">Service</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pt-5 ps-3 pe-3 fw-normal text-black" href="#">Our Plans</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pt-5 ps-3 pe-3 fw-normal text-black" href="#">Tools & Recources</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle pt-5 ps-5 pe-0 fw-normal text-black pe-0 " href="#"
+                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="d-inline-block n-circle position-absolute"
+                                        style="left:15px !important; top:45px !important"></span>Nidhi Bokadiya<i
+                                        class="fas fa-chevron-down ps-2 pe-5"></i>
+                                </a>
+                            </li>
                         </ul>
-                      </li>
-                    </ul>
-                  </div>
+                    </div>
                 </div>
-              </nav>
-            </header>
-            <div class="n_main  text-white p-3">
-                <h1>Welcome Nidhi Bokadiya</h1>   
-                <p>How can i help you ?</p>   
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>   
-                <div class="row m-0">
-                    <div class="col-12 col-md-6 col-lg-6 mb-3 n-box">
-                        <div class="rounded rounded-3 n_panel n_panel1 p-3">
-                            <img src="img/launch.svg">
-                            <h3 class="mb-4">Emotion Mapping</h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                            <div class="n-1 ">
-                                <h1> $5</h1>
-                                <div>
-                                    <span href="#" class="n-pay-box"> Pay </span>
+            </nav>
+        </header>
+        <div class="main p-3">
+                <div class="container n-con">
+                    <h2 class=" pt-3">Welcome Nidhi Bakodiya!</h2>
+                    <p class="fs-6 pt-3">Get start with ideal to manage your project,Ritik Bheelawat project. clients and
+                        stakeholders.</p>
+                    <div class="row">
+                    <div class="col-12 col-sm-12 col-lg-12 col-xl-6 mb-3">
+                        <div class="rounded-3 n-penal1 p-3">
+                            
+                            <h5 class=" ps-5 fs-5  text-white n-heading ">Emotion Mapping</h5>
+                            <p class="text-white pt-4 p-4 me-5 fs-16">"Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam.<br><br>"But I must explain to you how all this mistaken idea of denouncing pleasure and
+                                praising pain was born and I will give you a complete account of the system,</p>
+                            <div class="row m-2">
+                                <div class="col-3 ">
+                                    <h1 class="d-flex justify-content-center text-warning">$5</h1>
+                                    <button type="button" class="btn n-padding pt-2">Pay</button>
+                                    <a class="d-flex justify-content-center text-white pt-2">Lets go</a>
                                 </div>
-                                <a href="#" class="n-lg-color n-p fs-6">Lets go</a>
-                            </div>
-                            <div class="n-1 ">
-                                <h1> $5</h1>
-                                <div>
-                                    <span href="#" class="n-pay-box"> Pay </span>
+                                <div class="col-3 ">
+                                    <h1 class="d-flex justify-content-center text-warning">$10</h1>
+                                    <button type="button" class="btn n-padding pt-2">Pay</button>
+                                    <a class="d-flex justify-content-center text-white pt-2">Lets go</a>
                                 </div>
-                                <a href="#" class="n-lg-color n-p fs-6">Lets go</a>
-                            </div>
-                            <div class="n-1 ">
-                                <h1> $5</h1>
-                                <div>
-                                    <span href="#" class="n-pay-box"> Pay </span>
+                                <div class="col-3 ">
+                                    <h1 class="d-flex justify-content-center text-warning">$40</h1>
+                                    <button type="button" class="btn n-padding pt-2">Pay</button>
+                                    <a class="d-flex justify-content-center text-white pt-2">Lets go</a>
                                 </div>
-                                <a href="#" class="n-lg-color n-p fs-6">Lets go</a>
                             </div>
-                            <div class="n_panel1_c1 d-none">
-                              <img class="img-fluid" src="./img/e1.png" >
-                             
-                            </div>
-                            <a href="#" class="float-end text-white text-decoration-none mt-2">Learn More <i class="fas fa-chevron-right ms-1"></i></a>
+                            <a href="#" class="float-end text-white text-decoration-none mt-4">Learn more <i
+                                    class="fas fa-chevron-right ps-2"></i></a>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-6 mb-3">
-                        <div class="rounded rounded-3 n_panel n_panel2 p-3">
-                          <img src="img/Group 130.svg">
-                          <h3 class="mb-4">Innovation Decision Hub</h3>
-                          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                          <div class="n-1 ">
-                            <h1> $5</h1>
-                            <div>
-                                <span href="#" class="n-pay-box"> Pay </span>
+                    <div class="col-12 col-sm-12 col-lg-12 col-xl-6 mb-3">
+                        <div class="rounded-3 n-penal1 p-3">
+                            <img class="rounded-3" src="img/Group 130.svg" alt="#">
+                            <h5 class="ps-3 pt-3 fs-5 text-white n-heading">Usability Immersion</h5>
+                            <p class="text-white pt-4 p-4 me-5 fs-16">"Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam. <br> <br>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system,</p>
+                            <div class="row m-2">
+                                <div class="col-3 ">
+                                    <h1 class="d-flex justify-content-center text-warning">$5</h1>
+                                    <button type="button" class="btn n-padding pt-2">Pay</button>
+                                    <a class="d-flex justify-content-center text-white pt-2">Lets go</a>
+                                </div>
+                                <div class="col-3">
+                                    <h1 class="d-flex justify-content-center text-warning">$10</h1>
+                                    <button type="button" class="btn n-padding pt-2">Pay</button>
+                                    <a class="d-flex justify-content-center text-white pt-2">Lets go</a>
+                                </div>
+                                <div class="col-3">
+                                    <h1 class="d-flex justify-content-center text-warning">$40</h1>
+                                    <button type="button" class="btn n-padding pt-2">Pay</button>
+                                    <a class="d-flex justify-content-center text-white pt-2">Lets go</a>
+                                </div>
                             </div>
-                            <a href="#" class="n-lg-color n-p fs-6">Lets go</a>
+                            <a href="#" class="float-end text-white text-decoration-none mt-4">Learn more <i
+                                    class="fas fa-chevron-right ps-2"></i></a>
                         </div>
-                        <div class="n-1 ">
-                            <h1> $5</h1>
-                            <div>
-                                <span href="#" class="n-pay-box"> Pay </span>
-                            </div>
-                            <a href="#" class="n-lg-color n-p fs-6">Lets go</a>
-                        </div>
-                        <div class="n-1 ">
-                            <h1> $5</h1>
-                            <div>
-                                <span href="#" class="n-pay-box"> Pay </span>
-                            </div>
-                            <a href="#" class="n-lg-color n-p fs-6">Lets go</a>
-                        </div>
-                          <div class="n_panel1_c1 d-none">
-                            <img class="img-fluid" src="./img/e2.png" >
-                          </div>
-                          <a href="#" class="float-end text-white text-decoration-none mt-2">Learn More <i class="fas fa-chevron-right ms-1"></i></a>
-                      
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-            <footer class="myCollor">
-                <div class="row m-0 mb-5">
-                    <div class="col-5">
-                        <h4 class="fw-bold">FEATURES</h4>
-                        <ul class="nav">
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">Beginers Guide</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">Tools and Resources</a>
-                            </li>
-                          </ul>
-                    </div>
-                    <div class="col-7">
-                        <h4 class="fw-bold">Support</h4>
-                        <ul class="nav">
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">Help Center</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">Submit a Ticket</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">Contact Us</a>
-                            </li>
-                          </ul>
                     </div>
                 </div>
-                <div class="row m-0 ">
-                    <div class="col-5">
-                        <img src="img/Group 496.svg">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
-                    </div>
-                    <div class="col-7">
-                        <ul class="nav float-end">
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">
-                                  <img src="./img/twitter.svg" >
-                              </a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link pe-0" href="#"><img src="./img/youtube-icon.svg" ></a>
-                            </li>
-                          </ul>
-
-                          <div class="clearfix"></div>
-
-                          <ul class="nav float-end ">
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">Terms of Service</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link pe-0 " href="#">Privacy Policy</a>
-                            </li>
-                          </ul>
-
-                    </div>
-                </div>
-            </footer>
         </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-    </body>
+            </div>
+            
+        <footer class="  ps-5 p-4 mb-0">
+            <div class="row mb-5 ">
+                <div class="col-5 my_color n-size">
+                    <h5 class="m-0 fw-bold">FEATURES</h5>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link p-0" href=" #">Beginer Guide</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-0 ps-4" href="#">Tools and Resources</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-7 my_color n-size">
+                    <h5 class="m-0 fw-bold">SUPPORT</h5>
+                    <ul class="nav ">
+                        <li class="nav-item">
+                            <a class="nav-link p-0" href="#">Help Center</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-0 ps-4 " href="#">Submit a Ticket</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-0 ps-4">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row m-0">
+                <div class="col-5 my_color n-size p-0">
+                    <img src="img/Group 496.svg" alt="#">
+                    <p>IDEAL INSIGHTS & DECISION INTILLIGNCE PTE LTD 31 Rohester Drive,Level 24, singapore,138637</p>
+                </div>
+                <div class="col-7 n-size p-0 pe-5">
+                    <ul class="nav my_color float-end">
+                        <li class="nav-item">
+                            <a class="nav-link p-1" href="#">
+                                <img src="img/twitter.svg" alt="#">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-1 pe-0" href="#">
+                                <img src="img/youtube-icon.svg" alt="#">
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="clearfix"></div>
+
+                    <ul class="nav my_color float-end">
+                        <li class="nav-item">
+                            <a class="nav-link pe-0 ps-5" href="#">Terms of Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link pe-0 ps-5" href="#">Privacy policy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

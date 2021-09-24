@@ -1,142 +1,142 @@
-
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <title>p2</title>
+        <style>
+            
+            .n-mt {
+                margin-top: 35px;
+            }
+            x .fa-bars {
+                color: #000;
+            }
+            header{
+                height: 100px;
+                background: #FFFFFF;
+            }
+            header .navbar-toggler {
+                border: 1px solid #000 !important;
+                box-shadow: none !important;
+            }
+            .n-circle {
+                width: 25px;
+                height: 25px;
+                border-radius: 25px;
+                background-color: #ECE8EF;
+            }
+            .dropdown-toggle::after {
+                display: none;
+            }
+            .active {
+                background: #FFB900 !important;
+                color: #3E3D5F !important;
+                border-radius: 0px !important;
+            }
+            .n-tbdr {
+                border: 1px solid black !important;
+                height: auto !important;
+            }
+            .main {
+                min-height: 819px;
+                background-color:  #FBF4FC ;
+                background-image: url("img/rabbit.svg");
+                background-repeat: no-repeat;
+                background-position: 10% 99% !important;
+            }
+            .n-penal1 {
+                min-height: 500px;
+                background-color: #424D83;
+                cursor: pointer;
+            }
+            .n-heading {
+                display: inline-block;
+            }
+            .n-padding {
+                padding: 10% 35%  ;
+                border: 1px solid #FFB900;
+                color: #FFB900;
+            }
+            .n-padding:hover {
+                color: #FFB900;
+            }
+            footer{
+                min-height: 294px;
+                background: #ECE8EF;
+            }
+            .my_color * {
+                color: #3e3d5f;
+            }
+            .my_color>h5 {
+                font-family: 'Nunito', sans-serif;
+            }
+            .n-size>ul>li>a,
+            .n-size>p {
+                font-size: 15px;
+            }
+            .n-ms{
+                margin-left: 5% !important;
+            } 
+            .n-p{
+                padding: 0% !important;
+                margin: 0% !important;
+            }
+            
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;900&display=swap" rel="stylesheet">
-    <title>project 3</title>
-    <style>
-        .n-con {
-            min-height: 1100px;
-        }
-        .n-mt {
-            margin-top: 35px;
-        }
-        x .fa-bars {
-            color: #000;
-        }
-        header{
-            background: #FFFFFF;
-        }
-        header .navbar-toggler {
-            border: 1px solid #000 !important;
-            box-shadow: none !important;
-        }
-        .n-circle {
-            width: 25px;
-            height: 25px;
-            border-radius: 25px;
-            background-color: #ECE8EF;
-        }
-        .dropdown-toggle::after {
-            display: none;
-        }
-        .active {
-            background: #FFB900 !important;
-            color: #3E3D5F !important;
-            border-radius: 0px !important;
-        }
-        .n-tbdr {
-            border: 1px solid black !important;
-            height: auto !important;
-        }
-        .main {
-            min-height: 850px;
-            background-color:  #FBF4FC ;
-        }
-        .n-penal1 {
-            min-height: 500px;
-            background-color: #424D83;
-            cursor: pointer;
-        }
-        .n-heading {
-            display: inline-block;
-        }
-        .n-padding {
-            padding: 10px 35px  ;
-            border: 1px solid #FFB900;
-            color: #FFB900;
-        }
-        .n-padding:hover {
-            color: #FFB900;
-        }
-        footer{
-            background: #ECE8EF;
-        }
-        .my_color * {
-            color: #3e3d5f;
-        }
-        .my_color>h5 {
-            font-family: 'Nunito', sans-serif;
-        }
-        .n-size>ul>li>a,
-        .n-size>p {
-            font-size: 15px;
-        }
-        .n-ms{
-            margin-left: 105px !important;
-        }
-    </style>
-</head>
-
-<body>
-    <div  class="  p-0" >
-        <header class=" container-fluid m-0">
-            <nav class="navbar navbar-expand-lg navbar-light p-0  n-ms">
-                <div class="p-0 container-fluid  ">
-                    <a class="navbar-brand pt-4 pb-0 " href="#">
-                        <img src="img/Group 496.svg" alt="#">
-                    </a>
-                    <div>
-                        <h5 class="n-mt">Cognition Lab</h5>
-                    </div>
-                    <button class="navbar-toggler mt-4" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <div class="mx-auto"></div>
-                        <ul class="navbar-nav mb-2 mb-lg-0 n-mediapadding">
-                            <li class="nav-item">
-                                <a class="nav-link  pt-5 ps-3 pe-3 fw-bold text-black border-0 active " href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link pt-5 ps-3 pe-3 fw-normal text-black" href="#">Service</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link pt-5 ps-3 pe-3 fw-normal text-black" href="#">Our Plans</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link pt-5 ps-3 pe-3 fw-normal text-black" href="#">Tools & Recources</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle pt-5 ps-5 pe-0 fw-normal text-black pe-0 " href="#"
-                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <span class="d-inline-block n-circle position-absolute"
-                                        style="left:15px !important; top:45px !important"></span>Nidhi Bokadiya<i
-                                        class="fas fa-chevron-down ps-2 pe-5"></i>
+        </style>
+    </head>
+    <body>
+        <header class="n-tdbr n-se">
+            <div class="container-fluid n-p">
+                        <nav class="navbar navbar-expand-lg navbar-light p-0     n-ms">
+                            <div class="p-0 container -fluid ">
+                                <a class="navbar-brand pt-4 pb-0 " href="#">
+                                    <img src="img/logo.svg" alt="#">
                                 </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+                                <div>
+                                    <h5 class="n-mt ">Cognition Lab</h5>
+                                </div>
+                                <button class="navbar-toggler mt-4" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <i class="fas fa-bars"></i>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <div class="mx-auto"></div>
+                                    <ul class="navbar-nav mb-2 mb-lg-0 n-mediapadding">
+                                        <li class="nav-item">
+                                            <a class="nav-link  pt-5 ps-3 pe-3 fw-bold text-black border-0 active " href="#">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link pt-5 ps-3 pe-3 fw-normal text-black" href="#">Service</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link pt-5 ps-3 pe-3 fw-normal text-black" href="#">Our Plans</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link pt-5 ps-3 pe-3 fw-normal text-black" href="#">Tools & Recources</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle pt-5 ps-5 pe-0 fw-normal text-black pe-0 " href="#"
+                                                id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span class="d-inline-block n-circle position-absolute"
+                                                    style="left:15px !important; top:45px !important"></span>Nidhi Bokadiya<i
+                                                    class="fas fa-chevron-down ps-2 pe-5"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+             </div>
         </header>
-        <div class="main p-3 container-fluid ">
-                <div class="container n-con">
-                    <h2 class=" pt-3">Welcome Nidhi Bakodiya!</h2>
+        <div class=" container-fluid main n-tdbr ">
+            <div class=" container h-100 n-tdbr">
+                <h2 class=" pt-3">Welcome Nidhi Bakodiya!</h2>
                     <p class="fs-6 pt-3">Get start with ideal to manage your project,Ritik Bheelawat project. clients and
                         stakeholders.</p>
                     <div class="row">
@@ -199,16 +199,16 @@
                                     class="fas fa-chevron-right ps-2"></i></a>
                         </div>
                     </div>
-                </div>
-        </div>
 
             </div>
-            
-        <footer class=" container-fluid  p-4 mb-0 ">
-            <div>
-                <div class=" row mb-5 n-ms">
-                    <div class="col-5 my_color n-size ps-0">
-                        <h5 class="m-0 fw-bold">FEATURES</h5>
+          
+          </div>
+        <footer class="n-tdbr container-fluid p-0 m-0">
+            <div class="container h-100 n-tdbr  ms-4 ">
+                
+                <div class=" row mb-5   mt-5 n-ms ">
+                    <div class="col-5 my_color  mt-5  n-size ps-0">
+                        <h5 class="m-0 fw-bold ">FEATURES</h5>
                         <ul class="nav">
                             <li class="nav-item">
                                 <a class="nav-link p-0" href=" #">Beginer Guide</a>
@@ -218,7 +218,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-7 my_color n-size ">
+                    <div class="col-7 my_color mt-5   n-size ">
                         <h5 class="m-0 fw-bold">SUPPORT</h5>
                         <ul class="nav ">
                             <li class="nav-item">
@@ -235,7 +235,7 @@
                 </div>
                 <div class="row m-0 n-ms">
                     <div class="col-5 my_color n-size p-0">
-                        <img src="img/Group 496.svg" alt="#">
+                        <img src="img/logo.svg" alt="#">
                         <p>IDEAL INSIGHTS & DECISION INTILLIGNCE PTE LTD 31 Rohester Drive,Level 24, singapore,138637</p>
                     </div>
                     <div class="col-7 n-size p-0 pe-5">
@@ -264,12 +264,10 @@
                         </ul>
                     </div>
                 </div>
-            </div>   
-        </footer>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-        crossorigin="anonymous"></script>
-</body>
 
+
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
 </html>
